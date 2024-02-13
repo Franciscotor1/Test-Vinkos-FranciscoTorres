@@ -7,7 +7,7 @@ Azure Databricks
 Azure Delta Lake
 Data Bricks DBFS(Databricks File System)
 Azure Key Vault.
-MySQL y SQL en consultas y almacenamiento en delta
+MySQL y SQL en consultas y almacenamiento en delta
 
 Metodología de almacenamiento:
 
@@ -20,12 +20,12 @@ Integración con MySQL:
 Se integra una base de datos MySQL desde Databricks para almacenar tablas interactivas que pueden ser consultadas y utilizadas para análisis ad-hoc o para alimentar aplicaciones frontales.
 Estas tablas pueden ser actualizadas de uso PERMANENTE o periódicamente utilizando los datos procesados y transformados almacenados en el Data Lake, o sacadas de Hive metastore.
 
-El pipeline cumple con las pautas de ETL pedidas por el test:Ir todos los días al directorio para buscar los archivos
+El pipeline cumple con las pautas de ETL pedidas por el test:Ir todos los días al directorio para buscar los archivos
 Validar el layout de los archivos
 Validar la información a cargar.
 Borrar los archivos cargados en el origen
 Llevar una bitácora de control de carga de los archivos para poder reportar 
-En el caso del path del backup lo sustituí por el Data lake en ejemplo mnt/vinkostest/demo (y otros contenedores como dbd) esto nos lleva al Data lake Storage Gen2 donde tenemos nuestra montura del Delta Lake y el control de versiones de nuestras consultas y transformaciones, así podemos descargar cualquier archivo o programarlo para que sea automático en un zip y también puedan dejar registro.Lo demás ya son cálculos y transformaciones
+En el caso del path del backup lo sustituí por el Data lake en ejemplo mnt/vinkostest/demo (y otros contenedores como dbd) esto nos lleva al Data lake Storage Gen2 donde tenemos nuestra montura del Delta Lake y el control de versiones de nuestras consultas y transformaciones, así podemos descargar cualquier archivo o programarlo para que sea automático en un zip y también puedan dejar registro.Lo demás ya son cálculos y transformaciones
 
 
 
